@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +9,7 @@
 
     <meta
         name="description"
-        content="Descubre ciudades, hoteles, restaurantes y actividades turísticas de Colombia."
+        content="Descubre destinos, hoteles, restaurantes y actividades de Colombia."
     >
 
     <link rel="stylesheet" href="style.css">
@@ -17,43 +18,65 @@
 <body>
 
     <!-- =========================
-         BARRA SUPERIOR
+         NAVEGACIÓN
     ========================== -->
+
     <header class="navbar">
 
-        <div class="logo">
-            🇨🇴 Explora Colombia
-        </div>
+        <button
+            class="logo"
+            onclick="mostrarPagina('inicio')"
+        >
+            🇨🇴 <span>Explora Colombia</span>
+        </button>
 
-        <nav>
-            <button onclick="mostrarPagina('inicio')">Inicio</button>
-            <button onclick="mostrarPagina('ciudades')">Ciudades</button>
-            <button onclick="mostrarPagina('hoteles')">Hoteles</button>
+        <nav class="menu">
+
+            <button onclick="mostrarPagina('inicio')">
+                🏠 Inicio
+            </button>
+
+            <button onclick="mostrarPagina('ciudades')">
+                🌎 Ciudades
+            </button>
+
+            <button onclick="mostrarPagina('hoteles')">
+                🏨 Hoteles
+            </button>
+
             <button onclick="mostrarPagina('restaurantes')">
-                Restaurantes
+                🍽️ Restaurantes
             </button>
+
             <button onclick="mostrarPagina('actividades')">
-                Actividades
+                🏝️ Actividades
             </button>
+
         </nav>
 
     </header>
 
 
-    <!-- =========================
-         INICIO
-    ========================== -->
     <main>
 
-        <section id="inicio" class="pagina activa">
+        <!-- =========================
+             INICIO
+        ========================== -->
+
+        <section
+            id="inicio"
+            class="pagina activa"
+        >
 
             <div class="hero">
 
+                <div class="hero-overlay"></div>
+
                 <div class="hero-contenido">
 
-                    <span class="etiqueta">
-                        TURISMO EN COLOMBIA
-                    </span>
+                    <div class="hero-badge">
+                        🇨🇴 TURISMO EN COLOMBIA
+                    </div>
 
                     <h1>
                         Descubre
@@ -61,17 +84,47 @@
                     </h1>
 
                     <p>
-                        Explora ciudades increíbles, hoteles,
-                        restaurantes y actividades para vivir
-                        experiencias inolvidables.
+                        Playas, montañas, ciudades, gastronomía,
+                        naturaleza y experiencias inolvidables.
                     </p>
 
-                    <button
-                        class="boton-principal"
-                        onclick="mostrarPagina('ciudades')"
-                    >
-                        🌎 Explorar Colombia
-                    </button>
+                    <div class="hero-botones">
+
+                        <button
+                            class="boton-principal"
+                            onclick="mostrarPagina('ciudades')"
+                        >
+                            🌎 Explorar destinos
+                            <span>→</span>
+                        </button>
+
+                        <button
+                            class="boton-secundario"
+                            onclick="mostrarPagina('actividades')"
+                        >
+                            🏝️ Ver experiencias
+                        </button>
+
+                    </div>
+
+                    <div class="hero-datos">
+
+                        <div>
+                            <strong>🇨🇴</strong>
+                            <span>Colombia</span>
+                        </div>
+
+                        <div>
+                            <strong>🌴</strong>
+                            <span>Caribe y Pacífico</span>
+                        </div>
+
+                        <div>
+                            <strong>⛰️</strong>
+                            <span>Montañas y naturaleza</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -84,19 +137,24 @@
              CIUDADES
         ========================== -->
 
-        <section id="ciudades" class="pagina">
+        <section
+            id="ciudades"
+            class="pagina"
+        >
 
             <div class="encabezado">
 
-                <span>DESTINOS</span>
+                <div class="encabezado-etiqueta">
+                    🌎 DESTINOS
+                </div>
 
                 <h2>
-                    Ciudades para visitar
+                    Explora las ciudades de Colombia
                 </h2>
 
                 <p>
-                    Descubre destinos de Colombia y consulta
-                    toda su información turística.
+                    Conoce destinos turísticos, lugares para visitar,
+                    información y experiencias de cada ciudad.
                 </p>
 
             </div>
@@ -113,19 +171,24 @@
              HOTELES
         ========================== -->
 
-        <section id="hoteles" class="pagina">
+        <section
+            id="hoteles"
+            class="pagina"
+        >
 
             <div class="encabezado">
 
-                <span>ALOJAMIENTO</span>
+                <div class="encabezado-etiqueta">
+                    🏨 ALOJAMIENTO
+                </div>
 
                 <h2>
-                    Hoteles
+                    Encuentra tu hotel
                 </h2>
 
                 <p>
-                    Encuentra hoteles, precios, servicios,
-                    ubicación y clasificación.
+                    Consulta ubicación, categoría, valoración,
+                    servicios y precios disponibles.
                 </p>
 
             </div>
@@ -142,19 +205,24 @@
              RESTAURANTES
         ========================== -->
 
-        <section id="restaurantes" class="pagina">
+        <section
+            id="restaurantes"
+            class="pagina"
+        >
 
             <div class="encabezado">
 
-                <span>GASTRONOMÍA</span>
+                <div class="encabezado-etiqueta">
+                    🍽️ GASTRONOMÍA
+                </div>
 
                 <h2>
-                    Restaurantes
+                    Sabores de Colombia
                 </h2>
 
                 <p>
-                    Descubre lugares para comer y consulta
-                    sus precios, ubicación y valoración.
+                    Descubre restaurantes y lugares donde
+                    disfrutar la gastronomía colombiana.
                 </p>
 
             </div>
@@ -171,19 +239,24 @@
              ACTIVIDADES
         ========================== -->
 
-        <section id="actividades" class="pagina">
+        <section
+            id="actividades"
+            class="pagina"
+        >
 
             <div class="encabezado">
 
-                <span>EXPERIENCIAS</span>
+                <div class="encabezado-etiqueta">
+                    🏝️ EXPERIENCIAS
+                </div>
 
                 <h2>
-                    Actividades
+                    Vive Colombia
                 </h2>
 
                 <p>
-                    Aventuras, naturaleza, playas, cultura
-                    y muchas experiencias.
+                    Naturaleza, aventura, playas, cultura,
+                    gastronomía y mucho más.
                 </p>
 
             </div>
@@ -197,7 +270,7 @@
 
 
         <!-- =========================
-             PANTALLA DE DETALLES
+             DETALLES
         ========================== -->
 
         <section
@@ -205,12 +278,16 @@
             class="pagina"
         >
 
-            <button
-                class="boton-volver"
-                onclick="volverAtras()"
-            >
-                ← Volver
-            </button>
+            <div class="detalle-arriba">
+
+                <button
+                    class="boton-volver"
+                    onclick="volverAtras()"
+                >
+                    ← Volver
+                </button>
+
+            </div>
 
             <div id="contenido-detalles"></div>
 
@@ -220,18 +297,22 @@
 
 
     <!-- =========================
-         PIE DE PÁGINA
+         FOOTER
     ========================== -->
 
     <footer>
 
-        <strong>
+        <div class="footer-logo">
             🇨🇴 Explora Colombia
-        </strong>
+        </div>
 
         <p>
-            Descubre Colombia de una manera diferente.
+            Descubre Colombia. Vive la experiencia.
         </p>
+
+        <div class="footer-linea">
+            Información turística • Hoteles • Restaurantes • Actividades
+        </div>
 
     </footer>
 
@@ -240,3 +321,4 @@
 
 </body>
 </html>
+```
