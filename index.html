@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explora Colombia 🇨🇴</title>
+
+    <meta
+        name="description"
+        content="Descubre ciudades, hoteles, restaurantes y actividades turísticas de Colombia."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+    <header class="navbar">
+
+        <div class="logo">
+            🇨🇴 Explora Colombia
+        </div>
+
+        <nav>
+            <button onclick="mostrarPagina('inicio')">Inicio</button>
+            <button onclick="mostrarPagina('ciudades')">Ciudades</button>
+            <button onclick="mostrarPagina('hoteles')">Hoteles</button>
+            <button onclick="mostrarPagina('restaurantes')">
+                Restaurantes
+            </button>
+            <button onclick="mostrarPagina('actividades')">
+                Actividades
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         INICIO
+    ========================== -->
+    <main>
+
+        <section id="inicio" class="pagina activa">
+
+            <div class="hero">
+
+                <div class="hero-contenido">
+
+                    <span class="etiqueta">
+                        TURISMO EN COLOMBIA
+                    </span>
+
+                    <h1>
+                        Descubre
+                        <span>Colombia</span>
+                    </h1>
+
+                    <p>
+                        Explora ciudades increíbles, hoteles,
+                        restaurantes y actividades para vivir
+                        experiencias inolvidables.
+                    </p>
+
+                    <button
+                        class="boton-principal"
+                        onclick="mostrarPagina('ciudades')"
+                    >
+                        🌎 Explorar Colombia
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CIUDADES
+        ========================== -->
+
+        <section id="ciudades" class="pagina">
+
+            <div class="encabezado">
+
+                <span>DESTINOS</span>
+
+                <h2>
+                    Ciudades para visitar
+                </h2>
+
+                <p>
+                    Descubre destinos de Colombia y consulta
+                    toda su información turística.
+                </p>
+
+            </div>
+
+            <div
+                id="lista-ciudades"
+                class="catalogo"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================
+             HOTELES
+        ========================== -->
+
+        <section id="hoteles" class="pagina">
+
+            <div class="encabezado">
+
+                <span>ALOJAMIENTO</span>
+
+                <h2>
+                    Hoteles
+                </h2>
+
+                <p>
+                    Encuentra hoteles, precios, servicios,
+                    ubicación y clasificación.
+                </p>
+
+            </div>
+
+            <div
+                id="lista-hoteles"
+                class="catalogo"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================
+             RESTAURANTES
+        ========================== -->
+
+        <section id="restaurantes" class="pagina">
+
+            <div class="encabezado">
+
+                <span>GASTRONOMÍA</span>
+
+                <h2>
+                    Restaurantes
+                </h2>
+
+                <p>
+                    Descubre lugares para comer y consulta
+                    sus precios, ubicación y valoración.
+                </p>
+
+            </div>
+
+            <div
+                id="lista-restaurantes"
+                class="catalogo"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================
+             ACTIVIDADES
+        ========================== -->
+
+        <section id="actividades" class="pagina">
+
+            <div class="encabezado">
+
+                <span>EXPERIENCIAS</span>
+
+                <h2>
+                    Actividades
+                </h2>
+
+                <p>
+                    Aventuras, naturaleza, playas, cultura
+                    y muchas experiencias.
+                </p>
+
+            </div>
+
+            <div
+                id="lista-actividades"
+                class="catalogo"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================
+             PANTALLA DE DETALLES
+        ========================== -->
+
+        <section
+            id="detalles"
+            class="pagina"
+        >
+
+            <button
+                class="boton-volver"
+                onclick="volverAtras()"
+            >
+                ← Volver
+            </button>
+
+            <div id="contenido-detalles"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+        <strong>
+            🇨🇴 Explora Colombia
+        </strong>
+
+        <p>
+            Descubre Colombia de una manera diferente.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
