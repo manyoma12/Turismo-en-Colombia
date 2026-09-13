@@ -1,0 +1,126 @@
+```css
+/* =========================================
+   EXPLORA COLOMBIA 🇨🇴
+   DISEÑO PROFESIONAL V2
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f8;
+    color: #10222e;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+.navbar {
+    min-height: 82px;
+    padding: 14px 5%;
+    background: rgba(5, 20, 32, 0.97);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+.logo {
+    border: none;
+    background: transparent;
+    color: white;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.logo span {
+    margin-left: 5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu button {
+    border: none;
+    background: transparent;
+    color: #dce9ef;
+
+    padding: 13px 17px;
+    border-radius: 14px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.menu button:hover {
+    background: rgba(255,255,255,0.13);
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PÁGINAS
+========================================= */
+
+.pagina {
+    display: none;
+    min-height: calc(100vh - 82px);
+    padding: 70px 6%;
+}
+
+.pagina.activa {
+    display: block;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+#inicio {
+    padding: 0;
+}
+
+.hero {
+    min-height: calc(100vh - 82px);
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1531057242626-ef7d6f2a4c7f?auto=for
+```
