@@ -1,8 +1,13 @@
 ```css
-/* =========================================
-   EXPLORA COLOMBIA 🇨🇴
-   DISEÑO PROFESIONAL V2
-========================================= */
+/* =====================================================
+   🇨🇴 EXPLORA COLOMBIA
+   DISEÑO PROFESIONAL TIPO APP
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
 
 * {
     margin: 0;
@@ -10,117 +15,133 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
     background: #f4f7f8;
-    color: #10222e;
+    color: #10212b;
+    min-height: 100vh;
 }
 
 
-/* =========================================
-   NAVEGACIÓN
-========================================= */
+/* =====================================================
+   NAVBAR
+===================================================== */
 
 .navbar {
-    min-height: 82px;
-    padding: 14px 5%;
-    background: rgba(5, 20, 32, 0.97);
-    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    min-height: 76px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 12px 5%;
 
-    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    background:
+        rgba(5, 19, 30, 0.96);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.18);
 }
+
+
+/* LOGO */
 
 .logo {
     border: none;
     background: transparent;
+
     color: white;
 
-    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 19px;
     font-weight: 800;
 
     cursor: pointer;
 }
 
-.logo span {
-    margin-left: 5px;
+
+.logo:first-letter {
+    font-size: 28px;
 }
 
-.menu {
+
+/* MENU */
+
+.nav-menu {
     display: flex;
     align-items: center;
     gap: 8px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
-.menu button {
+
+.nav-menu button {
     border: none;
     background: transparent;
-    color: #dce9ef;
 
-    padding: 13px 17px;
-    border-radius: 14px;
+    color: rgba(255,255,255,0.75);
+
+    padding: 11px 15px;
+
+    border-radius: 12px;
 
     font-size: 14px;
     font-weight: 700;
 
     cursor: pointer;
 
-    transition: 0.25s;
+    transition:
+        0.25s ease;
 }
 
-.menu button:hover {
-    background: rgba(255,255,255,0.13);
+
+.nav-menu button:hover {
     color: white;
-    transform: translateY(-2px);
+
+    background:
+        rgba(255,255,255,0.10);
+
+    transform:
+        translateY(-2px);
 }
 
 
-/* =========================================
+/* =====================================================
    PÁGINAS
-========================================= */
+===================================================== */
 
 .pagina {
     display: none;
-    min-height: calc(100vh - 82px);
-    padding: 70px 6%;
+
+    min-height: calc(100vh - 76px);
 }
+
 
 .pagina.activa {
     display: block;
-}
 
-
-/* =========================================
-   HERO
-========================================= */
-
-#inicio {
-    padding: 0;
-}
-
-.hero {
-    min-height: calc(100vh - 82px);
-
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    overflow: hidden;
-
-    background-image:
-        url("https://images.unsplash.com/photo-1531057242626-ef7d6f2a4c7f?auto=for
+    animation:
+        aparec
 ```
