@@ -1,30 +1,22 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Explora Colombia: descubre ciudades, hoteles, restaurantes, actividades y lugares turísticos."
+        content="Explora Colombia: descubre destinos, hoteles, restaurantes, actividades y lugares turísticos."
     >
 
-    <meta
-        name="theme-color"
-        content="#071827"
-    >
+    <meta name="theme-color" content="#071827">
 
     <title>Explora Colombia 🇨🇴</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
@@ -71,7 +63,6 @@
 
     <main>
 
-
         <!-- =====================================
              INICIO
         ====================================== -->
@@ -97,11 +88,10 @@
                     </h1>
 
                     <p>
-                        Encuentra ciudades increíbles,
+                        Descubre los mejores destinos,
                         hoteles, restaurantes, actividades
-                        y lugares para conocer.
+                        y lugares turísticos de Colombia.
                     </p>
-
 
                     <div class="hero-botones">
 
@@ -114,7 +104,6 @@
                         </button>
 
                     </div>
-
 
                     <div class="hero-datos">
 
@@ -147,7 +136,6 @@
         </section>
 
 
-
         <!-- =====================================
              ELEGIR CIUDAD
         ====================================== -->
@@ -176,7 +164,6 @@
 
                 </div>
 
-
                 <div
                     id="lista-ciudades"
                     class="catalogo ciudades-catalogo"
@@ -188,9 +175,8 @@
         </section>
 
 
-
         <!-- =====================================
-             MENU DE CIUDAD
+             MENÚ DE CIUDAD
         ====================================== -->
 
         <section
@@ -207,13 +193,11 @@
                     ← Cambiar ciudad
                 </button>
 
-
                 <div
                     id="ciudad-seleccionada"
                     class="ciudad-banner"
                 >
                 </div>
-
 
                 <div class="encabezado">
 
@@ -226,8 +210,8 @@
                     </h2>
 
                     <p>
-                        Elige una categoría para ver
-                        lugares disponibles.
+                        Elige una categoría para descubrir
+                        opciones disponibles.
                     </p>
 
                 </div>
@@ -235,6 +219,7 @@
 
                 <div class="categorias-app">
 
+                    <!-- HOTELES -->
 
                     <button
                         class="categoria-app categoria-hoteles"
@@ -264,6 +249,7 @@
                     </button>
 
 
+                    <!-- RESTAURANTES -->
 
                     <button
                         class="categoria-app categoria-restaurantes"
@@ -277,5 +263,350 @@
                         <div class="categoria-texto">
 
                             <strong>
-                                Re
-```
+                                Restaurantes
+                            </strong>
+
+                            <span>
+                                Sabores y gastronomía
+                            </span>
+
+                        </div>
+
+                        <b>
+                            →
+                        </b>
+
+                    </button>
+
+
+                    <!-- ACTIVIDADES -->
+
+                    <button
+                        class="categoria-app categoria-actividades"
+                        onclick="mostrarCategoriaCiudad('actividades')"
+                    >
+
+                        <div class="categoria-icono">
+                            🏝️
+                        </div>
+
+                        <div class="categoria-texto">
+
+                            <strong>
+                                Actividades
+                            </strong>
+
+                            <span>
+                                Experiencias y aventuras
+                            </span>
+
+                        </div>
+
+                        <b>
+                            →
+                        </b>
+
+                    </button>
+
+
+                    <!-- LUGARES -->
+
+                    <button
+                        class="categoria-app categoria-lugares"
+                        onclick="mostrarCategoriaCiudad('lugares')"
+                    >
+
+                        <div class="categoria-icono">
+                            📍
+                        </div>
+
+                        <div class="categoria-texto">
+
+                            <strong>
+                                Lugares turísticos
+                            </strong>
+
+                            <span>
+                                Sitios para conocer
+                            </span>
+
+                        </div>
+
+                        <b>
+                            →
+                        </b>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             HOTELES
+        ====================================== -->
+
+        <section
+            id="hoteles"
+            class="pagina"
+        >
+
+            <div class="contenedor-pagina">
+
+                <button
+                    class="boton-volver"
+                    onclick="volverAlMenuCiudad()"
+                >
+                    ← Volver
+                </button>
+
+                <div class="encabezado">
+
+                    <span class="mini-titulo">
+                        HOTELES
+                    </span>
+
+                    <h2>
+                        Hoteles
+                    </h2>
+
+                    <p id="texto-hoteles">
+                        Encuentra alojamiento para tu viaje.
+                    </p>
+
+                </div>
+
+                <div
+                    id="lista-hoteles"
+                    class="catalogo"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             RESTAURANTES
+        ====================================== -->
+
+        <section
+            id="restaurantes"
+            class="pagina"
+        >
+
+            <div class="contenedor-pagina">
+
+                <button
+                    class="boton-volver"
+                    onclick="volverAlMenuCiudad()"
+                >
+                    ← Volver
+                </button>
+
+                <div class="encabezado">
+
+                    <span class="mini-titulo">
+                        GASTRONOMÍA
+                    </span>
+
+                    <h2>
+                        Restaurantes
+                    </h2>
+
+                    <p id="texto-restaurantes">
+                        Descubre lugares para comer.
+                    </p>
+
+                </div>
+
+                <div
+                    id="lista-restaurantes"
+                    class="catalogo"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ACTIVIDADES
+        ====================================== -->
+
+        <section
+            id="actividades"
+            class="pagina"
+        >
+
+            <div class="contenedor-pagina">
+
+                <button
+                    class="boton-volver"
+                    onclick="volverAlMenuCiudad()"
+                >
+                    ← Volver
+                </button>
+
+                <div class="encabezado">
+
+                    <span class="mini-titulo">
+                        EXPERIENCIAS
+                    </span>
+
+                    <h2>
+                        Actividades
+                    </h2>
+
+                    <p id="texto-actividades">
+                        Vive experiencias inolvidables.
+                    </p>
+
+                </div>
+
+                <div
+                    id="lista-actividades"
+                    class="catalogo"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             LUGARES TURÍSTICOS
+        ====================================== -->
+
+        <section
+            id="lugares"
+            class="pagina"
+        >
+
+            <div class="contenedor-pagina">
+
+                <button
+                    class="boton-volver"
+                    onclick="volverAlMenuCiudad()"
+                >
+                    ← Volver
+                </button>
+
+                <div class="encabezado">
+
+                    <span class="mini-titulo">
+                        TURISMO
+                    </span>
+
+                    <h2>
+                        Lugares turísticos
+                    </h2>
+
+                    <p id="texto-lugares">
+                        Conoce los lugares más interesantes.
+                    </p>
+
+                </div>
+
+                <div
+                    id="lista-lugares"
+                    class="catalogo"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             DETALLES
+        ====================================== -->
+
+        <section
+            id="detalles"
+            class="pagina"
+        >
+
+            <div class="contenedor-pagina">
+
+                <button
+                    class="boton-volver"
+                    onclick="volverDelDetalle()"
+                >
+                    ← Volver
+                </button>
+
+                <div
+                    id="contenido-detalles"
+                    class="detalle-contenedor"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                🇨🇴 Explora Colombia
+            </strong>
+
+            <p>
+                Descubre Colombia de una manera diferente.
+            </p>
+
+        </div>
+
+        <div class="footer-info">
+
+            <span>
+                Destinos
+            </span>
+
+            <span>
+                Hoteles
+            </span>
+
+            <span>
+                Restaurantes
+            </span>
+
+            <span>
+                Actividades
+            </span>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Explora Colombia
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
